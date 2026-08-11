@@ -1,0 +1,18 @@
+arch/arm64/boot/dts/apple/.t6002-j375d.dtb.dts.tmp: \
+  arch/arm64/boot/dts/apple/t6002-j375d.dts \
+  arch/arm64/boot/dts/apple/t6002.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/apple-aic.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+  scripts/dtc/include-prefixes/dt-bindings/pinctrl/apple.h \
+  scripts/dtc/include-prefixes/dt-bindings/phy/phy.h \
+  scripts/dtc/include-prefixes/dt-bindings/spmi/spmi.h \
+  arch/arm64/boot/dts/apple/multi-die-cpp.h \
+  arch/arm64/boot/dts/apple/t600x-common.dtsi \
+  arch/arm64/boot/dts/apple/t600x-die0.dtsi \
+  arch/arm64/boot/dts/apple/t600x-dieX.dtsi \
+  arch/arm64/boot/dts/apple/t600x-pmgr.dtsi \
+  arch/arm64/boot/dts/apple/t600x-gpio-pins.dtsi \
+  arch/arm64/boot/dts/apple/t600x-nvme.dtsi \
+  arch/arm64/boot/dts/apple/t600x-j375.dtsi \
+  arch/arm64/boot/dts/apple/spi1-nvram.dtsi

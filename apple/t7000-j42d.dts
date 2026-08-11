@@ -1,0 +1,69 @@
+// SPDX-License-Identifier: GPL-2.0+ OR MIT
+/*
+ * Apple TV HD, J42d, AppleTV5,3 (A1625)
+ * Copyright (c) 2022, Konrad Dybcio <konradybcio@kernel.org>
+ */
+
+/dts-v1/;
+
+#include "t7000.dtsi"
+#include "t7000-common.dtsi"
+
+/ {
+	compatible = "apple,j42d", "apple,t7000", "apple,arm-platform";
+	model = "Apple TV HD";
+	chassis-type = "television";
+
+	chosen {
+		stdout-path = "serial6";
+
+		framebuffer0: framebuffer@0 {
+			compatible = "apple,simple-framebuffer", "simple-framebuffer";
+			reg = <0 0 0 0>; /* To be filled by loader */
+			power-domains = <&ps_disp0 &ps_dp>;
+			/* Format properties will be added by loader */
+			status = "disabled";
+		};
+	};
+};
+
+&serial6 {
+	status = "okay";
+};
+
+&typhoon_opp06 {
+	status = "okay";
+};
+
+&i2c0 {
+	status = "okay";
+
+	pmic@74 {
+		compatible = "apple,adi-pmic", "apple,i2c-pmic";
+		reg = <0x74>;
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		rtc@5c0 {
+			compatible = "apple,adi-pmic-rtc", "apple,amber-pmic-rtc";
+			reg = <0x5c0 0x10>;
+			nvmem-cells = <&rtc_offset>;
+			nvmem-cell-names = "rtc_offset";
+		};
+
+		nvmem@4000 {
+			compatible = "apple,pmic-nvmem";
+			reg = <0x4000 0x28>;
+
+			nvmem-layout {
+				compatible = "fixed-layout";
+				#address-cells = <1>;
+				#size-cells = <1>;
+
+				rtc_offset: rtc-offset@4 {
+					reg = <0x4 0x4>;
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,17 @@
+// SPDX-License-Identifier: GPL-2.0+ OR MIT
+/*
+ * Apple iPad Pro (9.7-inch)
+ *
+ * This file contains parts common to iPad Pro (12.9-inch).
+ *
+ * target-type: J127, J128
+ *
+ * Copyright (c) 2026, Nick Chan <towinchenmi@gmail.com>
+ */
+
+&pmic0 {
+	backlight@b00 {
+		compatible = "apple,aria-pmic-bl";
+		reg = <0xb00 0x2>;
+	};
+};

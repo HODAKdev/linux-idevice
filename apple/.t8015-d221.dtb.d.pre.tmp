@@ -1,0 +1,12 @@
+arch/arm64/boot/dts/apple/.t8015-d221.dtb.dts.tmp: \
+  arch/arm64/boot/dts/apple/t8015-d221.dts \
+  arch/arm64/boot/dts/apple/t8015-x.dtsi \
+  arch/arm64/boot/dts/apple/t8015.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/apple-aic.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+  scripts/dtc/include-prefixes/dt-bindings/phy/phy.h \
+  scripts/dtc/include-prefixes/dt-bindings/pinctrl/apple.h \
+  scripts/dtc/include-prefixes/dt-bindings/spmi/spmi.h \
+  arch/arm64/boot/dts/apple/t8015-pmgr.dtsi \
+  arch/arm64/boot/dts/apple/t8015-common.dtsi

@@ -1,0 +1,14 @@
+arch/arm64/boot/dts/apple/.s5l8960x-j73.dtb.dts.tmp: \
+  arch/arm64/boot/dts/apple/s5l8960x-j73.dts \
+  arch/arm64/boot/dts/apple/s5l8960x-air1.dtsi \
+  arch/arm64/boot/dts/apple/s5l8960x.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/apple-aic.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+  scripts/dtc/include-prefixes/dt-bindings/phy/phy.h \
+  scripts/dtc/include-prefixes/dt-bindings/pinctrl/apple.h \
+  arch/arm64/boot/dts/apple/s5l8960x-pmgr.dtsi \
+  arch/arm64/boot/dts/apple/s5l8960x-common.dtsi \
+  arch/arm64/boot/dts/apple/s5l8965x-opp.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/input/input.h \
+  scripts/dtc/include-prefixes/dt-bindings/input/linux-event-codes.h

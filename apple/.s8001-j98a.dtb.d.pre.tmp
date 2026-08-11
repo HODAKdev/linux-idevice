@@ -1,0 +1,14 @@
+arch/arm64/boot/dts/apple/.s8001-j98a.dtb.dts.tmp: \
+  arch/arm64/boot/dts/apple/s8001-j98a.dts \
+  arch/arm64/boot/dts/apple/s8001-pro.dtsi \
+  arch/arm64/boot/dts/apple/s8001.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/apple-aic.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+  scripts/dtc/include-prefixes/dt-bindings/phy/phy.h \
+  scripts/dtc/include-prefixes/dt-bindings/pinctrl/apple.h \
+  arch/arm64/boot/dts/apple/s8001-pmgr.dtsi \
+  arch/arm64/boot/dts/apple/s8001-common.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/input/input.h \
+  scripts/dtc/include-prefixes/dt-bindings/input/linux-event-codes.h \
+  arch/arm64/boot/dts/apple/s8001-j98a-j99a.dtsi

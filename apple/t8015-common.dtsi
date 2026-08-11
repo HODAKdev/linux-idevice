@@ -1,0 +1,89 @@
+// SPDX-License-Identifier: GPL-2.0+ OR MIT
+/*
+ * Apple iPhone 8, iPhone 8 Plus, iPhone X
+ *
+ * This file contains parts common to all Apple A11 devices.
+ *
+ * target-type: D20, D21, D22, D201, D211, D221
+ *
+ * Copyright (c) 2024, Nick Chan <towinchenmi@gmail.com>
+ */
+
+/ {
+	aliases {
+		ausbphy0 = &ausbphy0;
+		serial0 = &serial0;
+		/* Used by loader to fill properties*/
+		smc = &smc;
+	};
+
+	chosen {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		stdout-path = "serial0";
+
+		framebuffer0: framebuffer@0 {
+			compatible = "apple,simple-framebuffer", "simple-framebuffer";
+			reg = <0 0 0 0>; /* To be filled by loader */
+			power-domains = <&ps_disp0_be &ps_mipi_dsi &ps_disp0_hilo &ps_disp0_ppp>;
+			/* Format properties will be added by loader */
+			status = "disabled";
+		};
+	};
+
+	memory@800000000 {
+		device_type = "memory";
+		reg = <0x8 0 0 0>; /* To be filled by loader */
+	};
+
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		/* To be filled by loader */
+	};
+};
+
+&serial0 {
+	status = "okay";
+};
+
+&smc_hwmon {
+	temperature-TG0B {
+		apple,key-id = "TG0B";
+		label = "Battery Temp";
+	};
+
+	temperature-TG0V {
+		apple,key-id = "TG0V";
+		label = "Battery Flex Temp";
+	};
+
+	temperature-TP1d {
+		apple,key-id = "TP1d";
+		label = "Forehead Temp";
+	};
+
+	temperature-TP2d {
+		apple,key-id = "TP2d";
+		label = "Rear Camera Temp";
+	};
+
+	temperature-TP3d {
+		apple,key-id = "TP3d";
+		label = "Cellular Radio Temp";
+	};
+
+	temperature-TP4d {
+		apple,key-id = "TP4d";
+		label = "AP SoC Temp";
+	};
+
+	temperature-TP5d {
+		apple,key-id = "TP5d";
+		label = "Charger Temp";
+	};
+};

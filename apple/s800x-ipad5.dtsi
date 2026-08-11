@@ -1,0 +1,80 @@
+// SPDX-License-Identifier: GPL-2.0+ OR MIT
+/*
+ * Apple iPad 5 common device tree
+ *
+ * Copyright (c) 2022, Konrad Dybcio <konradybcio@kernel.org>
+ */
+
+#include "s800-0-3-common.dtsi"
+#include <dt-bindings/input/input.h>
+
+/ {
+	chassis-type = "tablet";
+
+	gpio-keys {
+		compatible = "gpio-keys";
+
+		button-home {
+			label = "Home Button";
+			gpios = <&pinctrl_ap 96 GPIO_ACTIVE_LOW>;
+			linux,code = <KEY_HOMEPAGE>;
+			wakeup-source;
+		};
+
+		button-power {
+			label = "Power Button";
+			gpios = <&pinctrl_ap 97 GPIO_ACTIVE_LOW>;
+			linux,code = <KEY_POWER>;
+			wakeup-source;
+		};
+
+		button-voldown {
+			label = "Volume Down";
+			gpios = <&pinctrl_ap 143 GPIO_ACTIVE_LOW>;
+			linux,code = <KEY_VOLUMEDOWN>;
+		};
+
+		button-volup {
+			label = "Volume Up";
+			gpios = <&pinctrl_ap 144 GPIO_ACTIVE_LOW>;
+			linux,code = <KEY_VOLUMEUP>;
+		};
+	};
+};
+
+&framebuffer0 {
+	power-domains = <&ps_disp0 &ps_dp>;
+};
+
+&i2c0 {
+	status = "okay";
+
+	pmic@3c {
+		compatible = "apple,angel-pmic", "apple,i2c-pmic";
+		reg = <0x3c>;
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		rtc@500 {
+			compatible = "apple,angel-pmic-rtc", "apple,antigua-pmic-rtc";
+			reg = <0x500 0x10>;
+			nvmem-cells = <&rtc_offset>;
+			nvmem-cell-names = "rtc_offset";
+		};
+
+		nvmem@5000 {
+			compatible = "apple,pmic-nvmem";
+			reg = <0x5000 0x28>;
+
+			nvmem-layout {
+				compatible = "fixed-layout";
+				#address-cells = <1>;
+				#size-cells = <1>;
+
+				rtc_offset: rtc-offset@4 {
+					reg = <0x4 0x4>;
+				};
+			};
+		};
+	};
+};

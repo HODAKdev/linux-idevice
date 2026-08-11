@@ -1,0 +1,14 @@
+arch/arm64/boot/dts/apple/.t7000-n61.dtb.dts.tmp: \
+  arch/arm64/boot/dts/apple/t7000-n61.dts \
+  arch/arm64/boot/dts/apple/t7000-6.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/input/input.h \
+  scripts/dtc/include-prefixes/dt-bindings/input/linux-event-codes.h \
+  arch/arm64/boot/dts/apple/t7000.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/apple-aic.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+  scripts/dtc/include-prefixes/dt-bindings/phy/phy.h \
+  scripts/dtc/include-prefixes/dt-bindings/pinctrl/apple.h \
+  arch/arm64/boot/dts/apple/t7000-pmgr.dtsi \
+  arch/arm64/boot/dts/apple/t7000-common.dtsi \
+  arch/arm64/boot/dts/apple/t7000-handheld.dtsi

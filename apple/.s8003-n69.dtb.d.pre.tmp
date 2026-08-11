@@ -1,0 +1,14 @@
+arch/arm64/boot/dts/apple/.s8003-n69.dtb.dts.tmp: \
+  arch/arm64/boot/dts/apple/s8003-n69.dts \
+  arch/arm64/boot/dts/apple/s8003.dtsi \
+  arch/arm64/boot/dts/apple/s800-0-3.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/apple-aic.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+  scripts/dtc/include-prefixes/dt-bindings/phy/phy.h \
+  scripts/dtc/include-prefixes/dt-bindings/pinctrl/apple.h \
+  arch/arm64/boot/dts/apple/s800-0-3-pmgr.dtsi \
+  arch/arm64/boot/dts/apple/s800x-se.dtsi \
+  arch/arm64/boot/dts/apple/s800-0-3-common.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/input/input.h \
+  scripts/dtc/include-prefixes/dt-bindings/input/linux-event-codes.h
