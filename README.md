@@ -43,7 +43,7 @@ pmbootstrap netboot serve
 -> No further steps are necessary, they are for information purposes only.
 
 ## Make blob
-(default m1n1-linux.bin is for GSM model) \
+(default m1n1-linux.bin is for iPhone 8 GSM model) \
 for global model just use correct idevice dtb \
 m1n1 bootloader + .dtb + linux kernel + initramfs \
 ```
