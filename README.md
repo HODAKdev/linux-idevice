@@ -1,13 +1,15 @@
 # linux-idevice
-![fastfetch](/images/fastfetch.jpeg)
+
 Why did I create this repository?
 Because nobody provides proper documentation, and more importantly premade/precompiled files!
+
+<img src="https://github.com/HODAKdev/linux-idevice/blob/main/images/fastfetch.jpeg" width="300" alt="fastfetch"/>
 
 ## Showcase
 https://www.youtube.com/shorts/un0yvOCv--g?is=asPFtHepmnCoCIOV
 
-![fastfetch](/images/gta.jpeg)
-![fastfetch](/images/doom.jpeg)
+<img src="https://github.com/HODAKdev/linux-idevice/blob/main/images/gta.jpeg" width="300" alt="gta"/>
+<img src="https://github.com/HODAKdev/linux-idevice/blob/main/images/doom.jpeg" width="300" alt="doom"/>
 
 ## Info
 The linux kernel should work for any idevice that requires a 16k page size. \
