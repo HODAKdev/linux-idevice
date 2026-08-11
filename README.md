@@ -1,9 +1,13 @@
 # linux-idevice
-Why did I create this repository? \
+![fastfetch](/images/fastfetch.jpeg)
+Why did I create this repository?
 Because nobody provides proper documentation, and more importantly premade/precompiled files!
 
 ## Showcase
 https://www.youtube.com/shorts/un0yvOCv--g?is=asPFtHepmnCoCIOV
+
+![fastfetch](/images/gta.jpeg)
+![fastfetch](/images/doom.jpeg)
 
 ## Info
 The linux kernel should work for any idevice that requires a 16k page size. \
