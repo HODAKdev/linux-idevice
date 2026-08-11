@@ -10,7 +10,7 @@ The linux kernel should work for any idevice that requires a 16k page size. \
 Just change .dtb file for you idevice when you use cat to make final m1n1-linux.bin \
 Do not forget that .dtb file is device tree of your idevice. This is why you need correct file.
 
-You can use my precompiled bins, but you need make your image via pmbootstrap \
+You can use my precompiled bins, but you need make your rootfs via pmbootstrap \
 https://wiki.postmarketos.org/wiki/Pmbootstrap/Installation
 
 ## To make your image
