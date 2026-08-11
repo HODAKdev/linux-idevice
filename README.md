@@ -110,6 +110,12 @@ sudo apk add <package>
 sudo apk install chromium
 ```
 
+## Play DOOM
+```
+sudo apk add chocolate-doom freedoom
+DISPLAY=:0 chocolate-doom -iwad /usr/share/games/doom/freedoom1.wad
+```
+
 ## Build your linux kernel
 https://github.com/HoolockLinux/docs/blob/master/tutorials/SETUP.md#building-linux
 
