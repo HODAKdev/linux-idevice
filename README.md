@@ -51,8 +51,8 @@ pmbootstrap netboot serve
 
 ## Make blob
 (default m1n1-linux.bin is for iPhone 8 GSM model) \
-for global model just use correct idevice dtb \
-m1n1 bootloader + .dtb + linux kernel + initramfs \
+for different idevice or global model just use correct idevice dtb \
+m1n1 bootloader + .dtb + linux kernel + initramfs
 ```
 cat m1n1.bin \
     <(echo 'chosen.bootargs=loglevel=7 pmos.nosplash') \
@@ -128,7 +128,7 @@ https://github.com/HoolockLinux/docs/blob/master/tutorials/SETUP.md#building-lin
 
 ## DTBs
 https://github.com/HoolockLinux/linux/tree/hoolock/arch/arm64/boot/dts/apple \
-Choose correct model: Global/GSM 
+Choose correct dtb: idevice and Global/GSM model
 
 ## Credits
 https://palera.in/ \
