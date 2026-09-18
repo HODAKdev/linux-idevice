@@ -165,6 +165,9 @@ https://github.com/HoolockLinux/docs/blob/master/tutorials/SETUP.md#building-lin
 https://github.com/HoolockLinux/linux/tree/hoolock/arch/arm64/boot/dts/apple \
 Choose correct dtb: idevice and Global/GSM model
 
+## If you want android on idevice you can look
+https://github.com/LineageOS/android_device_apple_snowcastle
+
 ## Credits
 https://palera.in/ \
 https://github.com/HoolockLinux \
