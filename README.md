@@ -62,7 +62,7 @@ m1n1 bootloader + .dtb + linux kernel + initramfs
 ```
 cat m1n1.bin \
     <(echo 'chosen.bootargs=loglevel=7 pmos.nosplash') \
-    arch/arm64/boot/dts/apple/t8015-d20.dtb \
+    arch/arm64/boot/dts/apple/t8015-d201.dtb \
     arch/arm64/boot/Image.gz \
     initramfs.gz \
     > m1n1-linux.bin
