@@ -129,6 +129,35 @@ sudo apk add chocolate-doom freedoom
 DISPLAY=:0 chocolate-doom -iwad /usr/share/games/doom/freedoom1.wad
 ```
 
+## Install linux to disk with iOS, no netboot needed
+This commands can destroy iOS, but you can restore via DFU
+This will create 12GB partition for linux, you can set different size
+1. Jailbreak iOS
+2. Use terminal app or ssh to terminal access
+3. Download tools
+```
+https://nightly.link/hoolocklinux/docs/workflows/build/master/hoolock-support-iphoneos.zip
+```
+5. Unpack to var/jb
+6. If you use ssh set auto lock to never
+7. Better to run this command in screen or tmux, this will take some few minutes
+8. In ssh go to var/jb
+9. ./resize_apfs disk0s1 51999997952
+10. ./gdisk -l /dev/disk0
+11. ./gdisk /dev/disk0
+12. Command: d, Partition number: 1
+13. Command: n, Partition number: 1, First sector: 6, Last sector: 12695317, Hex code: AF0A
+14. Command: n, Partition number: 2, First sector: 12695318, Last sector: 15624994, Hex code: 8300
+15. Command: p (user verify)
+16. Command: w (write)
+17. Boot Linux on idevice
+18. sudo mkfs.ext4 -L hoolocklinux /dev/nvme0n1p2
+19. sudo mkdir -p /mnt/linux
+20. (Use only if you need mount) sudo mount /dev/nvme0n1p2 /mnt/linux
+More info
+https://github.com/HoolockLinux/docs/blob/master/tools/README.md
+https://github.com/HoolockLinux/docs/blob/master/tutorials/gdisk.md
+
 ## Build your linux kernel
 https://github.com/HoolockLinux/docs/blob/master/tutorials/SETUP.md#building-linux
 
