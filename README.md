@@ -130,7 +130,7 @@ DISPLAY=:0 chocolate-doom -iwad /usr/share/games/doom/freedoom1.wad
 ```
 
 ## Install linux to disk with iOS, no netboot needed
-This commands can destroy iOS, but you can restore via DFU
+This commands can destroy iOS, but you can restore via DFU \
 This will create 12GB partition for linux, you can set different size
 1. Jailbreak iOS
 2. Use terminal app or ssh to terminal access
