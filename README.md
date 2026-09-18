@@ -153,8 +153,8 @@ https://nightly.link/hoolocklinux/docs/workflows/build/master/hoolock-support-ip
 17. Boot Linux on idevice
 18. sudo mkfs.ext4 -L hoolocklinux /dev/nvme0n1p2
 19. sudo mkdir -p /mnt/linux
-20. (Use only if you need mount) sudo mount /dev/nvme0n1p2 /mnt/linux
-More info
+20. (Use only if you need mount) sudo mount /dev/nvme0n1p2 /mnt/linux \
+More info \
 https://github.com/HoolockLinux/docs/blob/master/tools/README.md
 https://github.com/HoolockLinux/docs/blob/master/tutorials/gdisk.md
 
