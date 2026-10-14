@@ -168,6 +168,15 @@ Choose correct dtb: idevice and Global/GSM model
 ## If you want android on idevice you can look
 https://github.com/LineageOS/android_device_apple_snowcastle
 
+## A12/A13 Support (use t8030 branch!)
+
+1. https://github.com/warp32767/m1n1
+2. https://github.com/warp32767/Hoolock-linux
+3. https://github.com/warp32767/remote_boot
+Tutorial is here
+https://github.com/HoolockLinux/docs/blob/master/tutorials/SETUP_iBoot.md
+But use stuff from warp32767
+
 ## Credits
 https://palera.in/ \
 https://github.com/HoolockLinux \
