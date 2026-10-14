@@ -172,9 +172,9 @@ https://github.com/LineageOS/android_device_apple_snowcastle
 
 1. https://github.com/warp32767/m1n1
 2. https://github.com/warp32767/Hoolock-linux
-3. https://github.com/warp32767/remote_boot
-Tutorial is here
-https://github.com/HoolockLinux/docs/blob/master/tutorials/SETUP_iBoot.md
+3. https://github.com/warp32767/remote_boot \
+Tutorial is here \
+https://github.com/HoolockLinux/docs/blob/master/tutorials/SETUP_iBoot.md \
 But use stuff from warp32767
 
 ## Credits
